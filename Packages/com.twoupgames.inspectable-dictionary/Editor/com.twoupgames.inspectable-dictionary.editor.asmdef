@@ -1,0 +1,18 @@
+{
+    "name": "com.twoupgames.inspectable-dictionary.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b8261940cebd8be44901a70d97387fde"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
