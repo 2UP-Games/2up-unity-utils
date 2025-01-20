@@ -3,6 +3,7 @@
 These are internally-written Unity packages that we have found useful at 2UP Games. Included are libraries for communicating with a ComfyUI server, SVG path-walking, Inspector helpers, and more.
 
 * Varied Audio: simple helpers for gently-varied audio
+* Vector Graphics Tools: SVG parser, including a realtime path-walker
 
 The packages are intended to be used as [embedded dependencies](https://docs.unity3d.com/Manual/upm-embed.html#embed-create). Simply copy any of these folders into your project's Packages directory.
 
