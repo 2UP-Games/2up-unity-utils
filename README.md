@@ -2,6 +2,7 @@
 
 These are internally-written Unity packages that we have found useful at 2UP Games. Included are libraries for communicating with a ComfyUI server, SVG path-walking, Inspector helpers, and more.
 
+* Folder Icon: demarcate your packages with a helpful icon
 * Inspectable Dictionary: serialize a dictionary with a nice Inspector interface
 * Varied Audio: simple helpers for gently-varied audio
 * Vector Graphics Tools: SVG parser, including a realtime path-walker
