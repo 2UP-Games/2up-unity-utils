@@ -1,0 +1,16 @@
+{
+  "name": "com.twoupgames.variedaudio",
+  "version": "2024.8.23",
+  "displayName": "_Varied Audio",
+  "description": "Local package",
+  "unity": "2019.1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [],
+  "author": {
+    "name": "2UP Games",
+    "email": "",
+    "url": "https://2up.games"
+  }
+}
