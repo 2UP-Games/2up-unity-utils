@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 248c5ec47cfc39146a61ef37bfbad84a, type: 3}
+  m_Name: ComfyConfig_Default
+  m_EditorClassIdentifier: 
+  url: http://your_url_here.com/comfyui
+  user: your_username_here
+  pass: your_password_here
+  downloadImage: duck_00001_.png
+  _promptId: c2850fb6-b4c5-4d84-a647-3f006c509a6f
+  _uploadImageFormat: 1
+  ControlNetStrength: 0.8
+  inputImage: {fileID: 0}
+  outputImage: {fileID: 2800000, guid: c189af4c78a7cd041955fdbdac022a5b, type: 3}
+  _prompt: {fileID: 11400000, guid: 20808eff9136a46589d6b29dee643215, type: 2}

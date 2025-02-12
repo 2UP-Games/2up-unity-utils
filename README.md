@@ -3,6 +3,7 @@
 These are internally-written Unity packages that we have found useful at 2UP Games. Each is small and focused.
 
 * Atomic Values: globally accessible variables with OnValueChanged events, backed by ScriptableObjects
+* ComfyUI API: Unity-friendly encapsulation of the [ComfyUI](https://github.com/comfyanonymous/ComfyUI) HTTP API
 * Folder Icon: demarcate your packages with a helpful icon
 * Inspectable Dictionary: serialize a dictionary with a nice Inspector interface
 * Varied Audio: simple helpers for gently-varied audio

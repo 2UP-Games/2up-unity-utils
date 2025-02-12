@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7719ceb4bf64342b21af40164c5fbe, type: 3}
+  m_Name: ComfyPrompt_Example
+  m_EditorClassIdentifier: 
+  _positivePrompt: three ducks
+  _negativePrompt: water
+  _outputPrefix: duck
+  _prompt: "{\r\n    \"prompt\": {\r\n        \"1\": {\r\n            \"inputs\":
+    {\r\n                \"ckpt_name\": \"dreamshaperXL_lightningDPMSDE.safetensors\"\r\n           
+    },\r\n            \"class_type\": \"CheckpointLoaderSimple\",\r\n           
+    \"_meta\": {\r\n                \"title\": \"Load Checkpoint\"\r\n           
+    }\r\n        },\r\n        \"2\": {\r\n            \"inputs\": {\r\n               
+    \"seed\": 393437521284971,\r\n                \"steps\": 4,\r\n               
+    \"cfg\": 2.5,\r\n                \"sampler_name\": \"dpmpp_sde\",\r\n               
+    \"scheduler\": \"karras\",\r\n                \"denoise\": 1,\r\n               
+    \"model\": [\r\n                    \"1\",\r\n                    0\r\n               
+    ],\r\n                \"positive\": [\r\n                    \"4\",\r\n                   
+    0\r\n                ],\r\n                \"negative\": [\r\n                   
+    \"5\",\r\n                    0\r\n                ],\r\n                \"latent_image\":
+    [\r\n                    \"8\",\r\n                    0\r\n                ]\r\n           
+    },\r\n            \"class_type\": \"KSampler\",\r\n            \"_meta\": {\r\n               
+    \"title\": \"KSampler\"\r\n            }\r\n        },\r\n        \"3\": {\r\n           
+    \"inputs\": {\r\n                \"samples\": [\r\n                    \"2\",\r\n                   
+    0\r\n                ],\r\n                \"vae\": [\r\n                   
+    \"1\",\r\n                    2\r\n                ]\r\n            },\r\n           
+    \"class_type\": \"VAEDecode\",\r\n            \"_meta\": {\r\n               
+    \"title\": \"VAE Decode\"\r\n            }\r\n        },\r\n        \"4\": {\r\n           
+    \"inputs\": {\r\n                \"text\": \"{{POS_PROMPT}}\",\r\n               
+    \"clip\": [\r\n                    \"1\",\r\n                    1\r\n               
+    ]\r\n            },\r\n            \"class_type\": \"CLIPTextEncode\",\r\n           
+    \"_meta\": {\r\n                \"title\": \"CLIP Text Encode (Prompt)\"\r\n           
+    }\r\n        },\r\n        \"5\": {\r\n            \"inputs\": {\r\n               
+    \"text\": \"{{NEG_PROMPT}}\",\r\n                \"clip\": [\r\n                   
+    \"1\",\r\n                    1\r\n                ]\r\n            },\r\n           
+    \"class_type\": \"CLIPTextEncode\",\r\n            \"_meta\": {\r\n               
+    \"title\": \"CLIP Text Encode (Prompt)\"\r\n            }\r\n        },\r\n       
+    \"7\": {\r\n            \"inputs\": {\r\n                \"filename_prefix\":
+    \"{{OUTPUT_PREFIX}}\",\r\n                \"images\": [\r\n                   
+    \"3\",\r\n                    0\r\n                ]\r\n            },\r\n           
+    \"class_type\": \"SaveImage\",\r\n            \"_meta\": {\r\n               
+    \"title\": \"Save Image\"\r\n            }\r\n        },\r\n        \"8\": {\r\n           
+    \"inputs\": {\r\n                \"width\": 1024,\r\n                \"height\":
+    1024,\r\n                \"batch_size\": 1\r\n            },\r\n            \"class_type\":
+    \"EmptyLatentImage\",\r\n            \"_meta\": {\r\n                \"title\":
+    \"Empty Latent Image\"\r\n            }\r\n        }\r\n    }\r\n}"
